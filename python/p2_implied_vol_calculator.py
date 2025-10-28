@@ -178,7 +178,7 @@ class AdaptiveIVSolver:
 
         # Calculate final statistics
         with torch.no_grad():
-            final_prices = self.calculate_model_price(S, K, T, r, sigma, is_call)
+            final_prices = self.black_scholes(S, K, T, r, sigma, is_call)
             pricing_errors = torch.abs(final_prices - market_prices)
             mae = pricing_errors.mean().item()
 

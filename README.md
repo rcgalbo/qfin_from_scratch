@@ -512,24 +512,3 @@ Detecting topological phase transitions (regime shifts)
 Early warning signals for market instability
 Research questions: Can topological invariants predict crashes?
 Literature review: Current state of TDA in finance
-
-
-
-
-Prerequisites → Foundational → Computational → Implementation → Advanced → Frontier
-
-[1.1.1 Real Analysis] ──────────────┐
-[1.1.2 Measure Theory] ────────────┐│
-[1.1.3 Functional Analysis] ───────┤├→ [2.1.1 SDEs] ──→ [2.1.2-2.1.4 MC Methods]
-[1.1.4 Proof-Based Math] ──────────┤│                              ↓
-[1.1.5 Advanced Linear Algebra] ───┘│                    [3.1-3.2 C++ OOP/Optimization]
-                                     │                              ↓
-                                     ├→ [2.2.1 PDE Derivation] ──→ [2.2.2-2.2.4 Solvers]
-                                     │                              ↓
-                                     └→ [4.1 Time Series] ────────→ [3.3 Python Bindings]
-                                                                     ↓
-[4.2 HMMs] ←────────────────────────────────────────────────────────┤
-[4.3 Bayesian Stats] ←──────────────────────────────────────────────┤
-                                                                     ↓
-[5.1 Graph Theory] ←────────────────────────────────────────────────┤
-[5.2 TDA] ←─────────────────────────────────────────────────────────┘
