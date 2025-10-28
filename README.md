@@ -24,7 +24,7 @@ Proof of Heine-Borel theorem
 Uniform vs. pointwise convergence characterization
 C++17 convergence testing framework with PyBind11 wrapper
 
-### [] Module 1.1.2: Introduction to Measure Theory
+### [ ] Module 1.1.2: Introduction to Measure Theory
 Axiomatic construction of probability theory via σ-algebras, measurable functions, and Lebesgue integration. This is the critical prerequisite for rigorously defining stochastic integrals and martingale theory.
 
 Key Deliverables:
@@ -35,7 +35,7 @@ Definition of conditional expectation using measure theory
 C++17 implementation of σ-algebra data structure for filtration management
 Application: Why Black-Scholes PDE derivation requires measure-theoretic foundations
 
-### [] Module 1.1.3: Functional Analysis for Dynamic Modeling
+### [ ] Module 1.1.3: Functional Analysis for Dynamic Modeling
 Study of Banach and Hilbert spaces, L^p spaces, operator theory, and their application to simplifying high-dimensional optimal control problems (HJB equations). Provides the abstract framework for treating infinite-dimensional systems.
 
 Key Deliverables:
@@ -46,7 +46,7 @@ Hilbert space formulation of optimal portfolio problems
 Connection to PDE weak solutions and variational methods
 Application: Reformulating portfolio optimization as operator equations
 
-### [] Module 1.1.4: Proof-Based Mathematics — Axiomatic Derivation of Financial Theorems
+### [ ] Module 1.1.4: Proof-Based Mathematics — Axiomatic Derivation of Financial Theorems
 Rigorous mathematical proofs of fundamental theorems in financial mathematics, starting from first principles. Emphasizes derivation over memorization.
 
 Key Deliverables:
@@ -57,7 +57,7 @@ Derivation of Black-Scholes PDE from no-arbitrage principle
 Proof of risk-neutral valuation formula
 Application: Understanding when derivative pricing formulas are valid
 
-### [] Module 1.1.5: Advanced Linear Algebra — High-Performance Numerical Kernels
+### [ ] Module 1.1.5: Advanced Linear Algebra — High-Performance Numerical Kernels
 Beyond theoretical linear algebra—focuses on cache-efficient, SIMD-optimized implementation of core operations (matrix multiplication, decomposition) using only C++17 Standard Library. Computational backbone of all numerical methods.
 
 Key Deliverables:
@@ -72,7 +72,7 @@ PyBind11 wrapper for Python integration
 
 ## Module 2.1: Numerical Simulation and Monte Carlo Methods
 
-### [] Module 2.1.1: Stochastic Differential Equations (SDEs) and Discretization
+### [ ] Module 2.1.1: Stochastic Differential Equations (SDEs) and Discretization
 Rigorous treatment of SDEs, Itô calculus, and numerical discretization schemes. Foundation for simulating asset price paths.
 
 Key Deliverables:
@@ -84,7 +84,7 @@ Strong vs. weak convergence analysis
 C++17 path generator implementation
 Application: Simulating Geometric Brownian Motion for option pricing
 
-### [] Module 2.1.2: Variance Reduction Techniques
+### [ ] Module 2.1.2: Variance Reduction Techniques
 Advanced methods to accelerate Monte Carlo convergence beyond O(N^{-1/2}). Critical for real-time pricing under tight latency constraints.
 
 Key Deliverables:
@@ -97,7 +97,7 @@ C++17 optimized implementation (cache-friendly path storage)
 Empirical benchmarking: convergence rate comparison
 Application: Pricing path-dependent options (Asian, lookback)
 
-### [] Module 2.1.3: Quasi-Monte Carlo (QMC) Methods
+### [ ] Module 2.1.3: Quasi-Monte Carlo (QMC) Methods
 Replacing pseudo-random numbers with deterministic low-discrepancy sequences. Achieves O(N^{-1}) or better convergence for smooth high-dimensional integrands.
 
 Key Deliverables:
@@ -109,7 +109,7 @@ Randomized QMC for error estimation
 Application: Multi-asset basket option pricing
 Performance comparison: MC vs. QMC for high-dimensional problems
 
-### [] Module 2.1.4: Advanced Greeks Estimation
+### [ ] Module 2.1.4: Advanced Greeks Estimation
 Efficient calculation of option sensitivities (Greeks) using pathwise derivative method and likelihood ratio method. Essential for real-time delta hedging.
 
 Key Deliverables:
@@ -124,7 +124,7 @@ Application: Real-time delta-gamma hedging systems
 
 ## Module 2.2: Partial Differential Equations (PDEs) in Financial Modeling
 
-### [] Module 2.2.1: PDE Derivation and Transformation Techniques
+### [ ] Module 2.2.1: PDE Derivation and Transformation Techniques
 Rigorous derivation of fundamental PDEs in finance (Black-Scholes, Fokker-Planck, HJB) and transformation to standard heat equation form.
 
 Key Deliverables:
@@ -135,7 +135,7 @@ Heat equation transformation (dimensionless variables)
 Boundary conditions for European/American options
 Application: Understanding why option pricing is a diffusion problem
 
-### [] Module 2.2.2: Finite Difference Method (FDM) — Explicit, Implicit, Crank-Nicolson
+### [ ] Module 2.2.2: Finite Difference Method (FDM) — Explicit, Implicit, Crank-Nicolson
 Core numerical PDE solver. Discretizes space and time to solve parabolic PDEs backwards from terminal condition. Focus on stability analysis and tri-diagonal solver optimization.
 
 Key Deliverables:
@@ -148,7 +148,7 @@ Memory-efficient stencil operations
 Application: European option pricing via FDM
 Performance: sub-millisecond pricing for production systems
 
-### [] Module 2.2.3: Free Boundary Problems — American Options
+### [ ] Module 2.2.3: Free Boundary Problems — American Options
 Handling optimal stopping problems where exercise boundary is unknown a priori. Combines PDE methods with optimization.
 
 Key Deliverables:
@@ -160,7 +160,7 @@ Least Squares Monte Carlo (LSM) for high-dimensional cases
 Longstaff-Schwartz algorithm implementation
 Application: American put option pricing and optimal exercise strategy
 
-### [] Module 2.2.4: High-Dimensional Solvers — FFT and Deep Galerkin Methods
+### [ ] Module 2.2.4: High-Dimensional Solvers — FFT and Deep Galerkin Methods
 Description: Beyond traditional FDM—advanced techniques for curse of dimensionality. FFT methods for Lévy processes and Deep Learning for non-linear high-dimensional PDEs.
 
 
@@ -176,7 +176,7 @@ Application: Multi-asset options, stochastic volatility models (Heston)
 
 ## Module 3.1: Object-Oriented Programming (OOP) in C++ for Financial Modeling
 
-### [] Module 3.1.1: OOP Fundamentals — Inheritance, Polymorphism, Encapsulation
+### [ ] Module 3.1.1: OOP Fundamentals — Inheritance, Polymorphism, Encapsulation
 Description: Designing robust class hierarchies for financial instruments. Balancing abstraction with performance (runtime vs. compile-time polymorphism).
 
 
@@ -188,7 +188,7 @@ Derived classes: EuropeanOption, AmericanOption, ExoticOption
 Payoff functor pattern for flexibility
 Application: Unified pricing interface for heterogeneous portfolios
 
-### [] Module 3.1.2: Design Patterns for Quantitative Systems
+### [ ] Module 3.1.2: Design Patterns for Quantitative Systems
 Description: Classic software engineering patterns applied to finance. Emphasizes maintainability and extensibility without sacrificing performance.
 
 Key Deliverables:
@@ -200,7 +200,7 @@ Singleton Pattern: Configuration management
 Template Method Pattern: Pricing workflow with customizable steps
 Application: Production-grade pricing library architecture
 
-### [] Module 3.1.3: Building the Financial Instrument Hierarchy
+### [ ] Module 3.1.3: Building the Financial Instrument Hierarchy
 Description: Complete implementation of a type-safe, extensible instrument class system with compile-time optimization where possible.
 
 
@@ -214,7 +214,7 @@ Application: Multi-asset portfolio with heterogeneous instruments
 
 ## Module 3.2: C++ Architecture and Optimization for HFT (C++17 Mandate)
 
-### [] Module 3.2.1: Compile-Time Optimization — constexpr and Template Metaprogramming
+### [ ] Module 3.2.1: Compile-Time Optimization — constexpr and Template Metaprogramming
 Description: Shifting computation from runtime to compile-time. Essential for nanosecond-level latency requirements.
 
 Key Deliverables:
@@ -226,7 +226,7 @@ Type-level computation (compile-time factorial, Fibonacci)
 Application: Pre-computed Greeks tables, compile-time matrix sizes
 Benchmarking: runtime vs. compile-time performance comparison
 
-### [] Module 3.2.2: Memory Management and Cache Optimization
+### [ ] Module 3.2.2: Memory Management and Cache Optimization
 Description: Understanding CPU cache hierarchy (L1/L2/L3) and designing data structures for cache locality. Deterministic memory allocation for HFT.
 
 
@@ -240,7 +240,7 @@ Data-oriented design (SoA vs. AoS layout)
 Profiling tools: perf, valgrind --tool=cachegrind
 Application: Tick data circular buffer for market data handler
 
-### [] Module 3.2.3: Concurrency and Lock-Free Programming
+### [ ] Module 3.2.3: Concurrency and Lock-Free Programming
 Description: Multi-threaded systems for parallel pricing and order execution. Lock-free data structures using C++11 atomics to avoid mutex contention.
 
 
@@ -254,7 +254,7 @@ Memory barriers and acquire-release semantics
 Application: Parallel Monte Carlo path generation
 Benchmarking: speedup analysis (Amdahl's Law)
 
-### [] Module 3.2.4: The LMAX Disruptor Pattern for High-Throughput Messaging
+### [ ] Module 3.2.4: The LMAX Disruptor Pattern for High-Throughput Messaging
 Description: Industry-standard architecture for passing messages between HFT system components (Feed Handler → Signal Engine → OMS) with minimal latency.
 
 
@@ -278,7 +278,7 @@ API design for mixed-language systems
 
 ## Module 3.3: Python Interoperability — Wrapping Low-Latency C++ Kernels
 
-### [] Module 3.3.1: The Accelerator Module Principle
+### [ ] Module 3.3.1: The Accelerator Module Principle
 Description: Design philosophy: Python for research/backtesting, C++ for production. Creating seamless bridges between high-level analysis and low-level execution.
 
 Key Deliverables:
@@ -288,7 +288,7 @@ Profiling Python code to identify bottlenecks
 Extracting hot paths for C++ re-implementation
 API design for mixed-language systems
 
-### [] Module 3.3.2: PyBind11 — Header-Only C++ Bindings
+### [ ] Module 3.3.2: PyBind11 — Header-Only C++ Bindings
 Description: Practical guide to exposing C++ classes and functions to Python with minimal overhead. Preferred over Boost.Python for simplicity and binary size.
 
 
@@ -302,7 +302,7 @@ Handling C++ exceptions in Python
 CMake build system integration
 Application: Every numerical module wrapped for Python access
 
-### [] Module 3.3.3: Performance Benchmarking — Python vs. C++
+### [ ] Module 3.3.3: Performance Benchmarking — Python vs. C++
 Description: Rigorous methodology for measuring and comparing performance across language boundaries.
 
 Key Deliverables:
@@ -316,7 +316,7 @@ Case study: Monte Carlo pricer speedup analysis
 
 ## Module 4.1: Time Series Analysis in Finance
 
-### [] Module 4.1.1: Non-Stationary Processes — Unit Roots, Cointegration, ECM
+### [ ] Module 4.1.1: Non-Stationary Processes — Unit Roots, Cointegration, ECM
 Description: Beyond ARMA models—handling non-stationary financial time series. Critical for pairs trading and statistical arbitrage.
 
 Key Deliverables:
@@ -330,7 +330,7 @@ C++17 implementation of ADF test
 Application: Identifying cointegrated asset pairs
 
 
-### [] Module 4.1.2: Volatility Models — GARCH and Stochastic Volatility
+### [ ] Module 4.1.2: Volatility Models — GARCH and Stochastic Volatility
 Description: Modeling time-varying volatility (volatility clustering). Essential for risk forecasting and VaR calculation.
 
 Key Deliverables:
@@ -342,7 +342,7 @@ Stochastic Volatility (SV) models (Heston, SABR)
 C++17 GARCH optimizer (quasi-Newton methods)
 Application: Forecasting realized volatility for option pricing
 
-### [] Module 4.1.3: State-Space Models and Kalman Filtering
+### [ ] Module 4.1.3: State-Space Models and Kalman Filtering
 Description: Optimal recursive estimation of hidden states from noisy observations. Bayesian filtering framework.
 
 Key Deliverables:
@@ -357,7 +357,7 @@ Application: Estimating true price from noisy tick data
 
 ## Module 4.2: Markov and Hidden Markov Models (HMMs)
 
-### [] Module 4.2.1: Foundations — Markov Property and Transition Matrices
+### [ ] Module 4.2.1: Foundations — Markov Property and Transition Matrices
 Description: Discrete-state continuous-time and discrete-time Markov chains. Foundation for regime-switching models.
 
 
@@ -369,7 +369,7 @@ Stationary distributions and ergodicity
 Absorbing states and transient behavior
 Application: Credit rating transitions
 
-### [] Module 4.2.2: Core HMM Algorithms — Forward-Backward and Viterbi
+### [ ] Module 4.2.2: Core HMM Algorithms — Forward-Backward and Viterbi
 Description: The three fundamental HMM problems: evaluation, decoding, learning. Efficient dynamic programming solutions.
 
 
@@ -384,7 +384,7 @@ C++17 log-space arithmetic (numerical stability)
 Application: Market regime identification (bull/bear/volatile)
 
 
-### [] Module 4.2.3: Advanced HMMs — Time-Varying Parameters and High-Frequency Applications
+### [ ] Module 4.2.3: Advanced HMMs — Time-Varying Parameters and High-Frequency Applications
 Description: Extending HMMs to handle non-stationary regimes. Critical for adaptive trading systems.
 
 
@@ -399,7 +399,7 @@ Application: High-frequency regime detection
 
 ## Module 4.3: Advanced Bayesian Statistics
 
-### [] Module 4.3.1: Foundations — Bayesian Inference and Conjugate Priors
+### [ ] Module 4.3.1: Foundations — Bayesian Inference and Conjugate Priors
 Description: Bayesian paradigm for uncertainty quantification. Prior → Likelihood → Posterior framework.
 
 
@@ -412,7 +412,7 @@ Bayesian point estimates (MAP, posterior mean, posterior median)
 Credible intervals vs. confidence intervals
 Application: Bayesian portfolio allocation with parameter uncertainty
 
-### [] Module 4.3.2: Computational Bayesian Methods — MCMC and Diagnostics
+### [ ] Module 4.3.2: Computational Bayesian Methods — MCMC and Diagnostics
 Description: Sampling from complex posterior distributions when closed-form solutions don't exist.
 
 
@@ -428,7 +428,7 @@ Thinning and burn-in strategies
 C++17 MCMC sampler with parallel chains
 Application: Bayesian inference for GARCH parameters
 
-### [] Module 4.3.3: Bayesian Non-Parametrics — Dirichlet Process Mixtures
+### [ ] Module 4.3.3: Bayesian Non-Parametrics — Dirichlet Process Mixtures
 Description: Frontier topic: Infinite-capacity models that adapt complexity to data. Model-free approach to volatility and Greeks.
 
 
@@ -444,7 +444,7 @@ Research frontier: When to use BNP vs. parametric models
 
 ## Module 5.1: Applied Graph Theory for Portfolio Optimization
 
-### [] Module 5.1.1: Graph Representation of Financial Networks
+### [ ] Module 5.1.1: Graph Representation of Financial Networks
 Description: Modeling correlation structure as a graph. Vertices = assets, edges = correlations above threshold.
 
 
@@ -455,7 +455,7 @@ Threshold selection (correlation cutoff)
 Graph visualization techniques
 Application: Visualizing market structure during crises
 
-### [] Module 5.1.2: Graph Algorithms — Cliques and Independent Sets
+### [ ] Module 5.1.2: Graph Algorithms — Cliques and Independent Sets
 Description: Finding highly correlated clusters (cliques) vs. diversified sets (independent sets). Directly applicable to portfolio construction.
 
 
@@ -468,7 +468,7 @@ Greedy approximation algorithms
 C++17 graph algorithm library (from scratch)
 Application: Diversification via independent sets
 
-### [] Module 5.1.3: Empirical Portfolio Optimization via Graph Structure
+### [ ] Module 5.1.3: Empirical Portfolio Optimization via Graph Structure
 Description: Novel approach: Using graph topology to maximize Sharpe ratio.
 Key Deliverables:
 
@@ -481,7 +481,7 @@ Application: Robust portfolio construction with minimal correlation
 
 ## Module 5.2: Knot Theory and Topological Data Analysis (TDA)
 
-### [] Module 5.2.1: Introduction to Topology and Invariants
+### [ ] Module 5.2.1: Introduction to Topology and Invariants
 Description: Topological concepts applied to financial data. Focus on properties preserved under continuous deformations.
 
 Key Deliverables:
@@ -501,7 +501,7 @@ Multiscale Gauss Link Integral (mGLI) for 3D point clouds
 Topological signatures as features
 Application: Protein-ligand binding (transferable to market data)
 
-### [] Module 5.2.3: TDA Applications in Finance — Market Interconnectedness
+### [ ] Module 5.2.3: TDA Applications in Finance — Market Interconnectedness
 Description: Speculative/research module: Applying TDA to understand systemic risk and regime changes.
 
 Key Deliverables:
